@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/screenshots/chat-interface.png" alt="EduLocal Agent" width="100%">
+<img src="docs/screenshots/index.png" alt="EduLocal Agent 首页" width="100%">
 
 #  
 
@@ -112,6 +112,12 @@
 ##   截图展示
 
 <div align="center">
+
+###   首页
+
+<img src="docs/screenshots/index.png" alt="首页" width="800">
+
+---
 
 ###   智能对话
 
