@@ -1,0 +1,32 @@
+# EduLocal Agent 配置文件
+# 数据目录: ~/EduLocalData/
+
+llm:
+  provider: "deepseek"   # 可选: deepseek, openai, ollama
+  api_key: ""            # DeepSeek/OpenAI API Key
+  base_url: null         # 自定义 API 地址（可选）
+  model_name: "deepseek-chat"
+  temperature: 0.7
+
+embedding:
+  provider: "local"      # 目前仅支持 local (sentence-transformers)
+  model_name: "BAAI/bge-small-zh-v1.5"
+
+local_llm:
+  ollama_url: "http://localhost:11434"
+  model: "qwen2.5:7b"
+
+rag:
+  top_k: 5
+  hybrid_weights: [0.6, 0.4]  # [语义权重, 关键词权重]
+  use_reranker: false
+  max_context_tokens: 2000
+
+harness:
+  enable_tracing: true
+  max_conversation_turns: 10
+  rate_limit_calls_per_minute: 30
+
+server:
+  host: "0.0.0.0"
+  port: 7860
