@@ -30,3 +30,10 @@ pydantic-settings>=2.0.0
 
 # 安全
 better-profanity>=0.7.0
+
+# 测试
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# 打包
+pyinstaller>=6.0.0
